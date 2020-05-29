@@ -10,7 +10,8 @@ export default createGlobalStyle`
 
     html, body, #root{
         height: 100%;
-        background: #f1f2f6
+        background: #f1f2f6;
+        touch-action: pan-x pan-y;
     }
     body{
         font: 14px "Roboto", sans-serif;
