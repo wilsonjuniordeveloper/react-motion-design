@@ -33,7 +33,7 @@ function ItemComponent({ item, id }) {
           animationKey="image"
         />
         <BottomCard>
-          <Picture src={item.photo} alt="picture"/>
+          <Picture src={item.icon} alt="picture"/>
             <div style={{flexDirection: 'column'}}>
               <Name>Joseph Bornen</Name>
               <Date>Today, 11.45pm</Date>
