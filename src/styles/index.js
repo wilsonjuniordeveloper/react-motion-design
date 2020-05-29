@@ -30,13 +30,15 @@ export const Name= styled.h1`
     font-size: 14px;
     color: #ccc;
     font-weight: 300;
-    margin-left: 5px;
+    margin-left: 10px;
+   
 `;
 
 export const Date = styled.h1`
-    font-size: 11px;
+    font-size: 10px;
     color: #ccc;
     margin-top: 5px;
-    margin-left: 7px;
-   color: #8c7ae6
+    margin-left: 12px;
+    color: #cd84f1;
+    font-weight: 500;
 `;
