@@ -9,7 +9,7 @@ export const Container = styled.div`
 `;
 
 export const BottomCard = styled.div`
-    width: 85%;
+    width: 89%;
     box-shadow: 25px 25px 25px rgba(154, 134, 134, 0.25);
     background: '#ffffff';
     height: 70px;
