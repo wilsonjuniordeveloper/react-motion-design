@@ -1,11 +1,11 @@
 import React,{useState, useEffect} from "react";
 import { useParams } from "react-router-dom";
-import PhotosDB from "./PhotosDB";
+import PhotosDB from "../data/PhotosDB";
 import { MotionScene, MotionScreen, SharedElement } from "react-motion-layout";
-import {Like, Star, Much} from './animated/index'
-import { ContainerVideo, CircleButton } from './styles/index'
+import {Like, Star, Much} from '../animated/index'
+import { ContainerVideo, CircleButton } from '../styles/index'
 import { useHistory } from 'react-router-dom'
-import teste from './teste.mp4'
+import teste from '../data/teste.mp4'
 import {motion} from 'framer-motion'
 export default function Photo() {
   const { photoId } = useParams();

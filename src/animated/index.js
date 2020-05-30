@@ -2,7 +2,7 @@ import React from 'react'
 import Lottie from 'lottie-react-web'
 import animationData from './like.json'
 import stardate from './star.json'
-import muchdate from './much.json'
+
 export const Like = (click) =>{
 
     const defaultOptions = {

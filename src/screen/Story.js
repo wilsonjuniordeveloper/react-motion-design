@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { SharedElement, MotionScene, MotionScreen } from 'react-motion-layout';
 
-import { items } from './data';
+import { items } from '../data/PhotosDB';
 
 export default function Story() {
   const { storyId } = useParams();

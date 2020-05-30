@@ -1,9 +1,9 @@
 import React from "react";
 import { MotionLayoutProvider } from "react-motion-layout";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
-import "./base.css";
-import Photos from "./Photos";
-import Photo from "./Photo";
+import "./styles/base.css";
+import Photos from "./screen/Photos";
+import Photo from "./screen/Photo";
 import Globalstyle from './styles/global'
 export default function App() {
   return (

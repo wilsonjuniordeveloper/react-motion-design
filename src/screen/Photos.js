@@ -1,5 +1,5 @@
 import React, { useCallback } from "react";
-import PhotosDB from "./PhotosDB";
+import PhotosDB from "../data/PhotosDB";
 import { useHistory } from "react-router-dom";
 import {
   MotionScene,
@@ -8,9 +8,9 @@ import {
   useMotion
 } from "react-motion-layout";
 
-import { Container, BottomCard, Picture, Name , Date, Topo, Logo} from './styles/index'
-import like from './like.svg'
-import logo from './logo.svg'
+import { Container, BottomCard, Picture, Name , Date, Topo, Logo} from '../styles/index'
+import like from '../assets/like.svg'
+import logo from '../assets/logo.svg'
 
 function ItemComponent({ item, id }) {
   const history = useHistory();
