@@ -8,6 +8,13 @@ export const Container = styled.div`
     flex-direction: column;
     margin-top: 20px;
 `;
+export const ContainerVideo = styled.div`
+    display: flex;
+    background: black;
+    flex-direction: column;
+    width: 100%;
+    opacity: 0.9
+`;
 
 export const BottomCard = styled.div`
     width: 89%;
@@ -60,4 +67,20 @@ export const Topo = styled.header`
     display: flex;
     align-items: center;
     opacity: 0.2
+`;
+
+export const ButoonGrup = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+`;
+
+export const CircleButton = styled.button`
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background: #000;
+    border: none;
+    margin: 10px
 `;
