@@ -13,7 +13,8 @@ export const ContainerVideo = styled.div`
     background: black;
     flex-direction: column;
     width: 100%;
-    opacity: 0.9
+    opacity: 0.9;
+    overflow: hidden
 `;
 
 export const BottomCard = styled.div`
