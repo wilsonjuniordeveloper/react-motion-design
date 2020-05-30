@@ -5,6 +5,8 @@ import "./styles/base.css";
 import Photos from "./screen/Photos";
 import Photo from "./screen/Photo";
 import Globalstyle from './styles/global'
+import 'react-perfect-scrollbar/dist/css/styles.css';
+
 export default function App() {
   return (
   <>  

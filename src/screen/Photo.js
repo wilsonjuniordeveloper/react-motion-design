@@ -4,9 +4,12 @@ import PhotosDB from "../data/PhotosDB";
 import { MotionScene, MotionScreen, SharedElement } from "react-motion-layout";
 import {Like, Star, Much} from '../animated/index'
 import { ContainerVideo, CircleButton } from '../styles/index'
-import { useHistory } from 'react-router-dom'
+import { useHistory , useLocation} from 'react-router-dom'
 import teste from '../data/teste.mp4'
 import {motion} from 'framer-motion'
+
+
+
 export default function Photo() {
   const { photoId } = useParams();
   const item = PhotosDB[photoId || 0];
@@ -16,13 +19,21 @@ export default function Photo() {
   const [star, setStar]=useState(true)
   const [much, setMuch]=useState(true)
   useEffect(()=>{
+
     setTimeout(function(){ setX(0)}, 1000);
     
   },[])
 
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+      window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <MotionScreen>
       <MotionScene name={`photo-${photoId}`}>
+  
         <ContainerVideo>
           <SharedElement.Image
             onClick={()=> history.push('/')}
@@ -42,6 +53,7 @@ export default function Photo() {
           </motion.div>
           <div style={{background:'#000', height: 200}}/>
         </ContainerVideo>
+     
       </MotionScene>
     </MotionScreen>
   );
