@@ -10,11 +10,16 @@ export const Container = styled.div`
 `;
 export const ContainerVideo = styled.div`
     display: flex;
-    background: black;
+    background: #000;
     flex-direction: column;
     width: 100%;
-    opacity: 0.9;
-    overflow: hidden
+    overflow: hidden; 
+
+`;
+
+
+export const VideHeader = styled.div`
+    display: flex;
 `;
 
 export const BottomCard = styled.div`
@@ -84,4 +89,16 @@ export const CircleButton = styled.button`
     background: #000;
     border: none;
     margin: 10px
+`;
+
+export const ChipView = styled.button`
+    width: 120px;
+    height: 40px;
+    border-radius: 100px;
+    color: #000;
+    border: none;
+    margin: 10px;
+    background:#212121;
+    flex-direction: row;
+    font-weight: bold
 `;
