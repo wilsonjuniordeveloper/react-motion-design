@@ -7,12 +7,19 @@ import {
   SharedElement,
   useMotion
 } from "react-motion-layout";
-
+import {useAuth} from '../context/auth'
 import { Container, BottomCard, Picture, Name , Date, Topo, Logo} from '../styles/index'
 import like from '../assets/like.svg'
 import logo from '../assets/logo.svg'
 
 function ItemComponent({ item, id }) {
+
+  const { signed, user, signIn, signOut } = useAuth()
+  
+  async function handleSignOut(){
+    signOut();    
+  } 
+
   const history = useHistory();
   const withTransition = useMotion(`photo-${id}`);
   const callback = useCallback(() => history.push(`/photo/${id}`), [
@@ -23,7 +30,7 @@ function ItemComponent({ item, id }) {
   return (
     <MotionScene name={`photo-${id}`} onClick={withTransition(callback)}>
       <Topo>
-        <Logo style={{marginLeft: 20, width: 45, height: 45}} src={logo}/>
+        <Logo onClick={handleSignOut} style={{marginLeft: 20, width: 45, height: 45}} src={logo}/>
       </Topo> 
       <Container>
         <SharedElement.Image

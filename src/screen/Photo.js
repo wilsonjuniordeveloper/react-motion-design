@@ -19,9 +19,7 @@ export default function Photo() {
   const [star, setStar]=useState(true)
   const [much, setMuch]=useState(true)
   useEffect(()=>{
-
     setTimeout(function(){ setX(0)}, 1000);
-    
   },[])
 
   const { pathname } = useLocation();
